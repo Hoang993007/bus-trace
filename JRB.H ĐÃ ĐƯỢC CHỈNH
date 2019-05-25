@@ -1,0 +1,5 @@
+cây jrb có chỗ lỗi phải chỉnh tay lại 
+
+cụ thể chỉnh lại như dưới đây (JRB_tree thành ptr)
+#define jrb_traverse(ptr, JRB_tree) \
+  for(ptr = jrb_first(JRB_tree); ptr != jrb_nil(JRB_tree); ptr = jrb_next(ptr))
